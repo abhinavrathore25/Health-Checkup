@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE2EB"
+    tools:context=".Question11">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="96dp"
+        android:layout_height="88dp"
+        android:alpha="0.7"
+        android:background="#FFFFFF"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"></pl.droidsonroids.gif.GifImageView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:paddingRight="5dp"
+        android:text="Your personal checkup assistant"
+        android:textAllCaps="true"
+        android:textColor="#004D40"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/gifImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="325dp"
+        android:layout_height="195dp"
+        android:background="#D7F0FC"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingTop="10sp"
+            android:paddingRight="10sp"
+            android:text="Do you have Chest Pain?"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/Pain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onPain"
+            android:padding="5sp"
+            android:text="Yes"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/noPain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="No"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/q11"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.995"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="216dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/q11"
+        app:layout_constraintEnd_toEndOf="@+id/q11"
+        app:layout_constraintTop_toTopOf="@+id/q11"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
