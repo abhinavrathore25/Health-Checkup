@@ -12,7 +12,7 @@ import java.util.Collections;
 
 public class MainActivity2 extends AppCompatActivity {
     private Button que1;
-
+    // added for commit on 03052022
     public static ArrayList<String> symptoms = new ArrayList<>();
     public static ArrayList<String> corona = new ArrayList<String>(){{
         add("Fever"); add("Tiredness"); add("Cough");
@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        que1 = (Button)findViewById(R.id.q1);
+        que1 = findViewById(R.id.q1);
         que1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
